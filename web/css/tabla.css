@@ -1,0 +1,224 @@
+
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+
+table.turnos {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 600px;
+}	
+
+table.turnos th {
+	//background: url(../images/noise-diagonal.png), linear-gradient(#777, #444);
+       // background: #abda0f url(../img/overlay.png) repeat-x;
+       background:  url(../img/overlay.png), linear-gradient(#abda0f, #ADD136);
+	border-left: 1px solid #abda0f;
+	border-right: 1px solid #abda0f;
+	border-top: 1px solid #abda0f;
+	border-bottom: 1px solid #ADD136;
+	box-shadow: inset 0 1px 0 #abda0f;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;
+        height: 15px;
+}
+
+table.turnos th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+table.turnos th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+table.turnos th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+table.turnos td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+table.turnos td.id{
+    width: 20px;
+}
+table.turnos td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+table.turnos td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+table.turnos tr {
+	background: url(../images/noise-diagonal.png);	
+}
+
+table.turnos tr:nth-child(odd) td {
+	background: #f1f1f1 url(../images/noise-diagonal.png);	
+}
+
+table.turnos tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+table.turnos tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+table.turnos tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+table.turnos tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+table.turnos tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+
+/* trabajadores*/
+
+table.trabajadores {
+	
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 11px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 700px;
+}	
+
+table.trabajadores th {
+	/*background: url(../images/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;*/
+        background:  url(../img/overlay.png), linear-gradient(#abda0f, #ADD136);
+	border-left: 1px solid #abda0f;
+	border-right: 1px solid #abda0f;
+	border-top: 1px solid #abda0f;
+	border-bottom: 1px solid #ADD136;
+	box-shadow: inset 0 1px 0 #abda0f;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;
+        height: 15px;
+}
+
+table.trabajadores th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+table.trabajadores th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+table.trabajadores th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+table.trabajadores td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+table.trabajadores td.id{
+    width: 20px;
+}
+table.trabajadores td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+table.trabajadores td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+table.trabajadores tr {
+	background: url(../images/noise-diagonal.png);	
+}
+
+table.trabajadores tr:nth-child(odd) td {
+	background: #f1f1f1 url(../images/noise-diagonal.png);	
+}
+
+table.trabajadores tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+table.trabajadores tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+table.trabajadores tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+table.trabajadores tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+table.trabajadores tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+.listTrabajadores{
+     height: 250px;
+    width: 720px;
+    display: block;
+    overflow-y: auto;
+ 
+    float:left;
+    margin-left: 50px;
+}
