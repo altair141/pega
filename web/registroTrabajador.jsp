@@ -87,7 +87,7 @@
 
             </ul>
         </div>
-        <form action="" class="formRT" enctype='multipart/form-data'>
+        <form action="TrabajadorCreado.jsp" class="formRT" enctype='multipart/form-data'>
             <h1>Registro de Trabajador</h1>
             <fieldset class="row1">
 
@@ -103,22 +103,22 @@
                 <p>
                     <label>R.U.N *
                     </label>
-                    <input type="text" maxlength="10"/>
+                    <input type="text" name="rut" maxlength="10"/>
                 </p>
                 <p>
                     <label>Nombres *
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="nombres" class="long"/>
                 </p>
                 <p>
                     <label>Apellido Paterno *
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="apellido1" class="long"/>
                 </p>
                 <p>
                     <label>Apellido Materno*
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="apellido2" class="long"/>
                 </p>
                 <p>
                     <label>sexo *</label>
@@ -130,7 +130,7 @@
                 <p>
                     <label>Estado civil *
                     </label>                   
-                    <select>
+                    <select name="estcivil">
                         <option value="1">Soltero(a)
                         </option>
                         <option value="2">Casado(a)
@@ -145,7 +145,7 @@
                 <p>
                     <label>Fecha de Nacimiento *
                     </label>
-                    <input type="date"></input>
+                    <input type="date" name="fechanac"></input>
 
                 </p>     
 
@@ -157,17 +157,17 @@
                 <p>
                     <label >domicilio *
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="direccion" class="long"/>
                 </p>
                 <p>
                     <label>Ciudad *
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="ciudad" class="long"/>
                 </p>
                 <p>
                     <label>Pais *
                     </label>
-                    <select>
+                    <select name="pais">
                         <option>
                         </option>
                         <option value="1">Chile
@@ -183,15 +183,15 @@
                 <p>
                     <label>Telefono *
                     </label>
-                    <input type="text" maxlength="3" class="area"/>
-                    <input type="text" maxlength="7"/>
+                    <input type="text" name="sub" maxlength="3" class="area"/>
+                    <input type="text" name="fono" maxlength="7"/>
                 </p>
 
 
                 <p>
                     <label>Email *
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="mail" class="long"/>
                 </p>
                 <p>
                     <label>celular 1
@@ -213,28 +213,28 @@
                 <p>
                     <label>Labor desempeñada
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="labor" class="long"/>
                 </p>   
                 <p>
                     <label>Horas semanales
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="hrsemanales" class="long"/>
                 </p>     
                 <p>
                     <label>Sueldo base  $
                     </label>
-                    <input type="text" class="long"/>
+                    <input type="text" name="sueldo" class="long"/>
                 </p> 
                 <p>
                     <label>Inicio de Contrato
                     </label>
-                    <input type="date" />
+                    <input type="date" name="inicontrato" />
 
                 </p>     
                 <p>
                     <label>Fin de Contrato
                     </label>
-                    <input type="date" />
+                    <input type="date" name="fincontrato" />
                      <label>Contrato indefinido
                     </label>
                     <input type="checkbox" name="colacion" value="1"  />
@@ -242,7 +242,7 @@
                 <p>
                     <label>Horas Extraordinarias
                     </label>
-                    <input type="number" disabled/>
+                    <input type="number" name="hrextra" disabled/>
                 </p>
                 <p>
                     <label>Jornada laboral
@@ -259,7 +259,7 @@
                 <p>
                     <label>Cobertura de salud
                     </label>
-                    <select>
+                    <select name="prevision">
                         <option>Fonasa</option>
                         <option>Isapre</option>
                     </select>
@@ -267,7 +267,7 @@
                 <p>
                     <label>AFP
                     </label>
-                    <select>
+                    <select name="AFP">
                         <option>Provida</option>
                         <option>Cuprum</option>
                     </select>
@@ -275,7 +275,7 @@
                 <p>
                     <label>Mutual de seguridad
                     </label>
-                    <select>
+                    <select name="mutual">
                          <option>...</option>
                         <option>AChS</option>
                         
@@ -288,7 +288,7 @@
                  <p>
                     <label>Ultimo año aprobado
                     </label>
-                    <select>
+                     <select name="lvlestudios">
                          <option>...</option>
                         <option>Cuarto medio TP</option>
                         <option>Cuarto medio HC</option>
@@ -298,7 +298,7 @@
                   <p>
                     <label>Profesion/oficio
                     </label>
-                    <input type="text" class="long"/>
+                      <input type="text" name="profesion" class="long"/>
                 </p>
             </fieldset>
             <fieldset class="row1">
