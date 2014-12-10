@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".calendarioDiaLibre").hide();
-    // alert("funciona");
+     alert("funciona");
 });
 $(function () {
     //alert("funciona");
