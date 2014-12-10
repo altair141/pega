@@ -19,17 +19,23 @@ $(function () {
     $("#botonListTur1").click(function () {
         $("#mesTurno").val("2014-11");
         $("#mesTurnoV").val("2014-11");
-        fechas();
+        
+            $(".buttonF").attr("disabled", false);
+        fechas("mesTurnoV");
     });
     $("#botonListTur2").click(function () {
         $("#mesTurno").val("2014-12");
         $("#mesTurnoV").val("2014-12");
-        fechas();
+         
+            $(".buttonF").attr("disabled", false);
+        fechas("mesTurnoV");
     });
     $("#botonListTur3").click(function () {
         $("#mesTurno").val("2015-01");
         $("#mesTurnoV").val("2015-01");
-        fechas();
+         
+            $(".buttonF").attr("disabled", false);
+        fechas("mesTurnoV");
     });
 
 
