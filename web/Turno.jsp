@@ -186,7 +186,7 @@
                 <p>
                     <label>Mes y año:                         
                     </label>
-                    <input type="text" class="long" id="mesTurno" value="" disabled/>
+                    <input type="text" class="long" id="mesTurnoV" value="" disabled/>
                 </p>
                 <br/>
                 <p>
