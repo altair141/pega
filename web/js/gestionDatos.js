@@ -1,13 +1,13 @@
 $(document).ready(function () {
     //$(".calendarioDiaLibre").hide();
-    //  alert("funciona");
+      alert("funciona");
     $(".buttonF").attr("disabled", true);
     $("#sucursal").attr("disabled", true);
     $("#mesTurno").attr("disabled", true);
     $(".calendarioDiaLibre").attr("disabled", true);
     $(".hora").attr("disabled", true);
     $(".colacion").attr("disabled", true);
-
+    
 });
 $(function () {
 
@@ -26,7 +26,7 @@ $(function () {
         $(".colacion").attr("disabled", false);
         $(".buttonF").attr("disabled", false);
     });
-     
+      
     var i = 0;
     for (i = 0; i < 4; i++) {
         if (i === 1) {
@@ -52,11 +52,12 @@ $(function () {
         }
 
     }
-    for (i = 0; i < 4; i++) {
+   
 
-        $("#botonListTur" + i).click(function () {
+        $("#botonListTur1" ).click(function () {
+            alert("hola");
             $(".buttonF").attr("disabled", false);
         });
-    }
+    
 
 });
