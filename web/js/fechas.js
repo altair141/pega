@@ -18,14 +18,17 @@ $(function () {
 
     $("#botonListTur1").click(function () {
         $("#mesTurno").val("2014-11");
+        $("#mesTurnoV").val("2014-11");
         fechas();
     });
     $("#botonListTur2").click(function () {
         $("#mesTurno").val("2014-12");
+        $("#mesTurnoV").val("2014-12");
         fechas();
     });
     $("#botonListTur3").click(function () {
         $("#mesTurno").val("2015-01");
+        $("#mesTurnoV").val("2015-01");
         fechas();
     });
 
@@ -52,6 +55,11 @@ $(function () {
         // $("#semanaInicio").val(" "+fechass.getDate()+" - "+fechass.getMonth()+" - "+fechass.getFullYear());
         diaSemana("mesTurno");
         fechas("mesTurno");
+    });
+      $("#mesTurnoV").change(function () {
+        // $("#semanaInicio").val(" "+fechass.getDate()+" - "+fechass.getMonth()+" - "+fechass.getFullYear());
+        diaSemana("mesTurnoV");
+        fechas("mesTurnoV");
     });
 
     $('.colacion').click(function () {
