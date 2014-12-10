@@ -34,7 +34,7 @@ public class TrabajadorDAO {
         }
     }
        public String consultarEmpleado(String rol) {
-        SessionFactory sf = HibernateUtil.getSessionFactory();//obtener acceso  a la factoría de  sesiones 
+        SessionFactory sf = NewHibernateUtil.getSessionFactory();//obtener acceso  a la factoría de  sesiones 
         Session sesion = sf.openSession();// iniciar la sesión
         Empleado e = (Empleado) sesion.get(Empleado.class, rol);/*instanciamos p, el metodo sesion.get           
          obtiene un poducto de la tabla Producto y el campo que corresponde a su clave primaria que es codigo
@@ -50,7 +50,7 @@ public class TrabajadorDAO {
     }
 
     public List<Empleado> verEmpleados() {
-        SessionFactory sf = HibernateUtil.getSessionFactory();//obtener acceso  a la factoría de  sesiones
+        SessionFactory sf = NewHibernateUtil.getSessionFactory();//obtener acceso  a la factoría de  sesiones
         Session sesion = sf.openSession();// iniciar la sesión
         Query query = sesion.createQuery("from Producto");//definimos una query y una consulta, esta consulta es en base al pojo por eso con mayúscula, luego hibérnate mapea a la tabla
         List<Empleado> lista = query.list();//en  una lista se rescata los objetos por medio de objeto c/u de las tuplas. Cada una de los tuplas se guarda como objeto en una lista
