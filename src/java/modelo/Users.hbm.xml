@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-12-2014 10:51:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Users" table="users" catalog="pegaturnos" optimistic-lock="version">
+        <id name="idpers" type="string">
+            <column name="idpers" length="12" />
+            <generator class="assigned" />
+        </id>
+        <property name="user" type="string">
+            <column name="user" length="40" not-null="true" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" length="40" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

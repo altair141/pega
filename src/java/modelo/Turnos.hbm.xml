@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-12-2014 10:51:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Turnos" table="turnos" catalog="pegaturnos" optimistic-lock="version">
+        <id name="idt" type="java.lang.Integer">
+            <column name="idt" />
+            <generator class="identity" />
+        </id>
+        <property name="mes" type="string">
+            <column name="mes" length="10" not-null="true" />
+        </property>
+        <property name="anho" type="string">
+            <column name="anho" length="4" not-null="true" />
+        </property>
+        <property name="hrcolacion" type="string">
+            <column name="hrcolacion" length="5" not-null="true" />
+        </property>
+        <property name="hrini" type="string">
+            <column name="hrini" length="5" not-null="true" />
+        </property>
+        <property name="hrter" type="string">
+            <column name="hrter" length="5" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

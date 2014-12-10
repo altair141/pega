@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-12-2014 10:51:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Infolaboral" table="infolaboral" catalog="pegaturnos" optimistic-lock="version">
+        <id name="idpers" type="string">
+            <column name="idpers" length="12" />
+            <generator class="assigned" />
+        </id>
+        <property name="labor" type="string">
+            <column name="labor" length="60" not-null="true" />
+        </property>
+        <property name="hrssemanales" type="int">
+            <column name="hrssemanales" not-null="true" />
+        </property>
+        <property name="inicontrato" type="string">
+            <column name="inicontrato" length="12" not-null="true" />
+        </property>
+        <property name="fincontrato" type="string">
+            <column name="fincontrato" length="12" not-null="true" />
+        </property>
+        <property name="sueldobas" type="string">
+            <column name="sueldobas" length="10" not-null="true" />
+        </property>
+        <property name="hrsextra" type="string">
+            <column name="hrsextra" length="3" not-null="true" />
+        </property>
+        <property name="tipojornada" type="string">
+            <column name="tipojornada" length="10" not-null="true" />
+        </property>
+        <property name="prevision" type="string">
+            <column name="prevision" length="60" not-null="true" />
+        </property>
+        <property name="afp" type="string">
+            <column name="AFP" length="60" not-null="true" />
+        </property>
+        <property name="mutual" type="string">
+            <column name="mutual" length="60" not-null="true" />
+        </property>
+        <property name="lvlestudios" type="string">
+            <column name="lvlestudios" length="60" not-null="true" />
+        </property>
+        <property name="profesion" type="string">
+            <column name="profesion" length="60" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

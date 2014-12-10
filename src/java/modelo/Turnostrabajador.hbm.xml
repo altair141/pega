@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-12-2014 10:51:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Turnostrabajador" table="turnostrabajador" catalog="pegaturnos" optimistic-lock="version">
+        <composite-id name="id" class="modelo.TurnostrabajadorId">
+            <key-property name="idpers" type="string">
+                <column name="idpers" length="12" />
+            </key-property>
+            <key-property name="idturno" type="int">
+                <column name="idturno" />
+            </key-property>
+        </composite-id>
+        <property name="comentarios" type="string">
+            <column name="comentarios" length="100" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

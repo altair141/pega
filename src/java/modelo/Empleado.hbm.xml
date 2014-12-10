@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-12-2014 10:51:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.Empleado" table="empleado" catalog="pegaturnos" optimistic-lock="version">
+        <id name="rut" type="string">
+            <column name="rut" length="12" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="60" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="60" not-null="true" />
+        </property>
+        <property name="estadocivil" type="string">
+            <column name="estadocivil" length="10" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="9" not-null="true" />
+        </property>
+        <property name="fechanac" type="string">
+            <column name="fechanac" length="12" not-null="true" />
+        </property>
+        <property name="domicilio" type="string">
+            <column name="domicilio" length="100" not-null="true" />
+        </property>
+        <property name="fono" type="string">
+            <column name="fono" length="15" not-null="true" />
+        </property>
+        <property name="ciudad" type="string">
+            <column name="ciudad" length="40" not-null="true" />
+        </property>
+        <property name="region" type="string">
+            <column name="region" length="40" not-null="true" />
+        </property>
+        <property name="comuna" type="string">
+            <column name="comuna" length="40" not-null="true" />
+        </property>
+        <property name="pais" type="string">
+            <column name="pais" length="40" not-null="true" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="60" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
