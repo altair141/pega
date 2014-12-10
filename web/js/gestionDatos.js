@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //$(".calendarioDiaLibre").hide();
-      alert("funciona");
+     // alert("funciona");
     $(".buttonF").attr("disabled", true);
     $("#sucursal").attr("disabled", true);
     $("#mesTurno").attr("disabled", true);
