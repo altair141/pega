@@ -54,10 +54,5 @@ $(function () {
     }
    
 
-        $("#botonListTur1" ).click(function () {
-            alert("hola");
-            $(".buttonF").attr("disabled", false);
-        });
-    
 
 });
